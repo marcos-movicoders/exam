@@ -10,3 +10,17 @@ RULES - Eat Rules
 RULES - Winning and losing rules
 FR - A player can save one game.
 FR - A player can load one game.
+
+Notes: I think that I'm going to delegate all the responsability on the board isntead of the pieces, pieces won't know where are they.
+
+Board is represented by [][]: 
+
+[0, 0], [1, 0], [2, 0] ... [7, 0]       Black pieces on top
+[0, 1], [1, 1], [2, 1] ... [7, 1]
+...                        
+...                        
+...                    ... 
+[0, 7], [1, 7], [2, 7] ... [7, 7]       White pieces on Bottom
+
+
+

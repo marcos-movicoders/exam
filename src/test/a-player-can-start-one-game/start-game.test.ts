@@ -15,10 +15,8 @@ describe("Starting a new game should", () => {
         expect(game.blacks).toEqual(player2);
     });
 
-    test("Colors attributes are properly set", async () => {
-        let player1 = new Player("John")
-        let player2 = new Player("Mac")
-        let game = new Game(player1, player2)
+    test("Player colors attributes are properly set", async () => {
+        let game = generateGame()
 
         game.start()
 
@@ -27,9 +25,7 @@ describe("Starting a new game should", () => {
     });
 
     test("Board is initialized", async () => {
-        let player1 = new Player("John")
-        let player2 = new Player("Mac")
-        let game = new Game(player1, player2)
+        let game = generateGame()
 
         game.start()
 
@@ -46,16 +42,35 @@ describe("Starting a new game should", () => {
     });
 
     test("Board Cells are properly disposed", async () => {
-        let player1 = new Player("John")
-        let player2 = new Player("Mac")
-        let game = new Game(player1, player2)
+        let game = generateGame()
 
         game.start()
 
         expect(game.board[0][0].color).toEqual(CellColor.White);
         expect(game.board[1][0].color).toEqual(CellColor.Black);
         expect(game.board[7][7].color).toEqual(CellColor.White);
+        expect(game.board[0][7].color).toEqual(CellColor.Black);
+        expect(game.board[7][0].color).toEqual(CellColor.Black);
         
     });
+
+    test("Pieces are properly disposed", async () => {
+        
+        let game = generateGame()
+
+        game.start()
+
+        expect(game.board[0][0].piece).toEqual(undefined);
+        expect(game.board[1][0].piece).toEqual(PiecesColor.Black);
+        expect(game.board[0][7].piece).toEqual(PiecesColor.Black);
+        expect(game.board[1][7].piece).toEqual(undefined);
+        
+    });
+
+    function generateGame(){
+        let player1 = new Player("John")
+        let player2 = new Player("Mac")
+        return new Game(player1, player2)
+    }
 
 })
