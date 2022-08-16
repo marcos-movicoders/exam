@@ -24,3 +24,4 @@ Board is represented by [][]:
 
 
 
+Final note: So far so good, now I would like to refactor the code, optimize some algorithms (the ones to determine entity colors and so on) and start developing rules. Moving some entities to domain folder and start creating useCases for the rules.
