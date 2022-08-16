@@ -1,22 +1,34 @@
-# Evaluation
+# Evaluation Concepts.
+
+Hexagonal architecture.
+
+Clean architecture.
+
+Clean code.
 
 Object calisthenics:
 
-- Only One Level Of Indentation Per Method
-- Don’t Use The ELSE Keyword
-- Wrap All Primitives And Strings
-- First Class Collections
-- One Dot Per Line
-- Don’t Abbreviate
-- Keep All Entities Small
-- No Classes With More Than Two Instance Variables
-- No Getters/Setters/Properties
+- Only One Level Of Indentation Per Method.
+- Don’t Use The ELSE Keyword.
+- Wrap All Primitives And Strings.
+- First Class Collections.
+- One Dot Per Line.
+- Don’t Abbreviate.
+- Keep All Entities Small.
+- No Classes With More Than Two Instance Variables.
+- No Getters/Setters/Properties.
 
-# Assessment: Checkers game.
+# Assessment: 
+
+Checkers game.
 
 # Description: 
 
-This is a complex assessment. but you don't have to finish it completely but follow the right process and design rules. If you have any doubt, please ask.
+This is a complex assessment, but you don't have to finish it completely but follow the right process and design rules. If you have any doubt, please ask.
+Take 10 minutes to explain in a Exam.md file what you will do. 
+Use 1:40 hours to implement as many features as you can of the following using TDD. Focus in delivering working code and features.
+Use the last 10 minutes to explain what is missing and how you will accomplish it in the same file.
+Feel free to comment any decission you take during the development stage.
 
 # Global requirements:
 
